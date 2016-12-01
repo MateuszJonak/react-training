@@ -8,7 +8,6 @@ const TodoApp = () => (
     <AddTodo/>
     <VisibleTodoList/>
     <Footer/>
-
   </div>
 );
 

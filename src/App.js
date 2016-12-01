@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import TodoApp from './todos/todoApp';
+import store from './todos/store';
 
 class App extends Component {
   render() {
     return (
-      <h1>Hello</h1>
+      <div>
+        <h1>Hello</h1>
+        <TodoApp
+          {...store.getState()}
+        />
+      </div>
     );
   }
 }
